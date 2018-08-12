@@ -27,14 +27,14 @@ public class AnotherActivity extends AppCompatActivity {
     private void setupViewModel() {
         mViewModel = ViewModelProviders.of(this).get(MainViewModel.class);
 
-        final Observer<Integer> viewModelAccumulationObserver = new Observer<Integer>() {
+        final Observer<Integer> observer = new Observer<Integer>() {
             @Override
             public void onChanged(@Nullable Integer integer) {
                 tvVMCount.setText(integer.toString());
             }
         };
 
-        mViewModel.getAccumulationData().observe(this, viewModelAccumulationObserver);
+        mViewModel.getAccumulationData().observe(this, observer);
     }
 
 
