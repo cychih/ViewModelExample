@@ -30,7 +30,7 @@ public class AnotherActivity extends AppCompatActivity {
         final Observer<Integer> observer = new Observer<Integer>() {
             @Override
             public void onChanged(@Nullable Integer integer) {
-                tvVMCount.setText(integer.toString());
+                tvVMCount.setText(String.valueOf(integer));
             }
         };
 
