@@ -91,7 +91,7 @@
         android:layout_height="32dp"
         android:layout_marginStart="16dp"
         android:textSize="24sp"
-        android:text="onSetValue = "
+        android:text="onDataChange = "
         android:gravity="center_vertical"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@id/title_vm"/>

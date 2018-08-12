@@ -26,7 +26,7 @@ public class MainViewModel extends AndroidViewModel {
 
     public void accumulate() {
         mAccumulation++;
-        mAccumulationData.setValue(mAccumulation);
+        mAccumulationData.postValue(mAccumulation);
     }
 
     public void reset() {
