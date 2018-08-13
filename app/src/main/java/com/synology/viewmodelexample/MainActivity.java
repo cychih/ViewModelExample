@@ -58,6 +58,7 @@ public class MainActivity extends AppCompatActivity {
     public void onAccClicked() {
         localInt++;
         mViewModel.accumulate();
+//        mViewModel.accumulateAsync();
         onCountChanged();
     }
 
